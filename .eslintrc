@@ -1,0 +1,37 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "array-callback-return": "error",
+        "eqeqeq": "error",
+        "no-else-return": "error",
+        "no-empty-function": [ "error", { "allow": ["generatorMethods"] } ],
+        "array-bracket-spacing": ["error", "always"],
+        "block-spacing": "error",
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "camelcase": ["error", {properties: "never"}],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "computed-property-spacing": ["error", "always"],
+        "consistent-this": ["error", "self"],
+        "eol-last": ["error", "always"],
+        "func-call-spacing": ["error", "never"],
+        "func-names": ["error", "as-needed"]
+    }
+}
